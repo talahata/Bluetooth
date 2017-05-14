@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoRa Monitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="status">Status: </string>
+    <string name="tat">Tắt</string>
+    <string name="image_bluetooth">Button Bluetooth</string>
+    <string name="ds_device">Danh sách các thiết bị Bluetooth</string>
+    <string name="yc_bat_bluetooth">Bật Bluetooth để thấy các thiết bị</string>
+
+    <string name="device">Device: </string>
+    <string name="hc05">HC-05</string>
+    <string name="image_connect">image connect</string>
+    <string name="connectToControl">Connect to control this Device</string>
+    <string name="sendInt">Send Int</string>
+    <string name="sendString">Send String</string>
+    <string name="output">Output: </string>
+    <string name="guiso5">Gửi số 5 thành công</string>
+    <string name="receive">Receive from this Device: </string>
+</resources>

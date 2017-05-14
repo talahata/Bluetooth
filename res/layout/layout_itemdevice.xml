@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#009999"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="@string/device"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+        <TextView 
+            android:id="@+id/txtDevice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/hc05"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+        <ImageView 
+            android:id="@+id/btnConnect"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/image_connect"
+            android:layout_gravity="center_vertical"
+            android:onClick="BtnConnect_Click"
+            android:src="@drawable/disconnect"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#003322"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/txtNoteDevice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="3dp"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/connectToControl"
+	        android:textSize="15sp"
+	        android:textColor="#003322"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#003322"/>
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editSendInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10" >
+                <requestFocus />
+            </EditText>
+            
+            <Button 
+                android:id="@+id/btnSendInt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#009999"
+                android:text="@string/sendInt"
+                android:onClick="BtnSendInt_Click"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editSendString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10" >
+            </EditText>
+            
+            <Button 
+                android:id="@+id/btnSendString"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#009999"
+                android:text="@string/sendString"
+                android:onClick="BtnSendString_Click"
+                />
+        </TableRow>
+    </TableLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/output"/>
+        <TextView 
+            android:id="@+id/txtOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guiso5"/>
+    </LinearLayout>
+        
+    <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="5dp"
+		android:text="@string/receive"
+		android:textSize="20sp"/>
+    
+    <EditText 
+        android:id="@+id/editReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+    
+    <Button 
+        android:id="@+id/btnBack"
+      	android:layout_width="60dp"
+      	android:layout_height="60dp"
+      	android:layout_marginTop="20dp"
+      	android:layout_gravity="center_horizontal"
+      	android:onClick="BtnBack_Click"
+		android:background="@drawable/back2"/>
+</LinearLayout>

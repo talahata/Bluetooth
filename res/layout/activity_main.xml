@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#009999"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="@string/status"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+        <TextView 
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="@string/tat"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+        <ImageView 
+            android:id="@+id/btnStatus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="130dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/off1"
+            android:contentDescription="@string/image_bluetooth"
+            android:onClick="btnStatusBluetooth_Click"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#003322"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="3dp"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/ds_device"
+	        android:textSize="18sp"
+	        android:textColor="#003322"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#003322"/>
+    
+    <ListView 
+        android:id="@+id/lvDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+    
+    <TextView 
+        android:id="@+id/txtLineNote"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:background="#003322"/>
+    
+    <TextView 
+        android:id="@+id/txtNote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="@string/yc_bat_bluetooth"
+        android:textSize="15sp"
+        android:textColor="#003322"/>
+
+</LinearLayout>
